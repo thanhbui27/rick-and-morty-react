@@ -1,0 +1,64 @@
+.spinner-container {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
+
+.spinner {
+    animation: spin 1s linear infinite;
+    color: #4f46e5;
+}
+
+.spinner-circle {
+    opacity: 0.25;
+    stroke: currentColor;
+}
+
+.spinner-path {
+    opacity: 0.75;
+    fill: currentColor;
+}
+
+/* Kích thước Spinner */
+.spinner-xs {
+    width: 8px;
+    height: 8px;
+}
+
+.spinner-sm {
+    width: 16px;
+    height: 16px;
+}
+
+.spinner-md {
+    width: 24px;
+    height: 24px;
+}
+
+.spinner-lg {
+    width: 32px;
+    height: 32px;
+}
+
+.spinner-xl {
+    width: 40px;
+    height: 40px;
+}
+
+.spinner-2xl {
+    width: 48px;
+    height: 48px;
+}
+
+/* Animation */
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
